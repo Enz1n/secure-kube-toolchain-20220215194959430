@@ -258,4 +258,4 @@ apiVersion: tekton.dev/v1beta1
  spec:
    params:
      - name: nombre
-       value: $(params.nombre)
+       value: $(event.nombre)
