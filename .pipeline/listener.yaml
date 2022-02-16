@@ -250,3 +250,12 @@ spec:
         name: bitbucket-commit
       template:
         name: trigger-template-secure-kube
+---
+apiVersion: tekton.dev/v1beta1
+ kind: TriggerBinding
+ metadata:
+   name: Pruebafinal
+ spec:
+   params:
+     - name: nombre
+       value: $(params.nombre)
